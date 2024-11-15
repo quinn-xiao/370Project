@@ -1,0 +1,60 @@
+id,name,country,description,url,category
+abc-news,ABC News,us,"Your trusted source for breaking news, analysis, exclusive interviews, headlines, and videos at ABCNews.com.",https://abcnews.go.com,general
+al-jazeera-english,Al Jazeera English,us,"News, analysis from the Middle East and worldwide, multimedia and interactives, opinions, documentaries, podcasts, long reads and broadcast schedule.",https://www.aljazeera.com,general
+ars-technica,Ars Technica,us,"The PC enthusiast's resource. Power users and the tools they love, without computing religion.",https://arstechnica.com,technology
+associated-press,Associated Press,us,"The AP delivers in-depth coverage on the international, politics, lifestyle, business, and entertainment news.",https://apnews.com/,general
+axios,Axios,us,"Axios are a new media company delivering vital, trustworthy news and analysis in the most efficient, illuminating and shareable ways possible.",https://www.axios.com,general
+bleacher-report,Bleacher Report,us,"Sports journalists and bloggers covering NFL, MLB, NBA, NHL, MMA, college football and basketball, NASCAR, fantasy sports and more. News, photos, mock drafts, game scores, player profiles and more!",http://www.bleacherreport.com,sports
+bloomberg,Bloomberg,us,"Bloomberg delivers business and markets news, data, analysis, and video to the world, featuring stories from Businessweek and Bloomberg News.",http://www.bloomberg.com,business
+breitbart-news,Breitbart News,us,Syndicated news and opinion website providing continuously updated headlines to top news and analysis sources.,http://www.breitbart.com,general
+business-insider,Business Insider,us,"Business Insider is a fast-growing business site with deep financial, media, tech, and other industry verticals. Launched in 2007, the site is now the largest business news site on the web.",http://www.businessinsider.com,business
+buzzfeed,Buzzfeed,us,"BuzzFeed is a cross-platform, global network for news and entertainment that generates seven billion views each month.",https://www.buzzfeed.com,entertainment
+cbs-news,CBS News,us,CBS News: dedicated to providing the best in journalism under standards it pioneered at the dawn of radio and television and continue in the digital age.,http://www.cbsnews.com,general
+cnn,CNN,us,"View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN",http://us.cnn.com,general
+crypto-coins-news,Crypto Coins News,us,"Providing breaking cryptocurrency news - focusing on Bitcoin, Ethereum, ICOs, blockchain technology, and smart contracts.",https://www.ccn.com,technology
+engadget,Engadget,us,Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics.,https://www.engadget.com,technology
+entertainment-weekly,Entertainment Weekly,us,"Online version of the print magazine includes entertainment news, interviews, reviews of music, film, TV and books, and a special area for magazine subscribers.",http://www.ew.com,entertainment
+espn,ESPN,us,"ESPN has up-to-the-minute sports news coverage, scores, highlights and commentary for NFL, MLB, NBA, College Football, NCAA Basketball and more.",https://www.espn.com,sports
+espn-cric-info,ESPN Cric Info,us,"ESPN Cricinfo provides the most comprehensive cricket coverage available including live ball-by-ball commentary, news, unparalleled statistics, quality editorial comment and analysis.",http://www.espncricinfo.com/,sports
+fortune,Fortune,us,Fortune 500 Daily and Breaking Business News,http://fortune.com,business
+fox-news,Fox News,us,"Breaking News, Latest News and Current News from FOXNews.com. Breaking news and video. Latest Current News: U.S., World, Entertainment, Health, Business, Technology, Politics, Sports.",http://www.foxnews.com,general
+fox-sports,Fox Sports,us,"Find live scores, player and team news, videos, rumors, stats, standings, schedules and fantasy games on FOX Sports.",http://www.foxsports.com,sports
+google-news,Google News,us,"Comprehensive, up-to-date news coverage, aggregated from sources all over the world by Google News.",https://news.google.com,general
+hacker-news,Hacker News,us,"Hacker News is a social news website focusing on computer science and entrepreneurship. It is run by Paul Graham's investment fund and startup incubator, Y Combinator. In general, content that can be submitted is defined as ""anything that gratifies one's intellectual curiosity"".",https://news.ycombinator.com,technology
+ign,IGN,us,"IGN is your site for Xbox One, PS4, PC, Wii-U, Xbox 360, PS3, Wii, 3DS, PS Vita and iPhone games with expert reviews, news, previews, trailers, cheat codes, wiki guides and walkthroughs.",http://www.ign.com,entertainment
+mashable,Mashable,us,"Mashable is a global, multi-platform media and entertainment company.",https://mashable.com,entertainment
+medical-news-today,Medical News Today,us,"Medical news and health news headlines posted throughout the day, every day.",http://www.medicalnewstoday.com,health
+msnbc,MSNBC,us,"Breaking news and in-depth analysis of the headlines, as well as commentary and informed perspectives from The Rachel Maddow Show, Morning Joe & more.",http://www.msnbc.com,general
+mtv-news,MTV News,us,"The ultimate news source for music, celebrity, entertainment, movies, and current events on the web. It's pop culture on steroids.",http://www.mtv.com/news,entertainment
+national-geographic,National Geographic,us,Reporting our world daily: original nature and science news from National Geographic.,http://news.nationalgeographic.com,science
+national-review,National Review,us,"National Review: Conservative News, Opinion, Politics, Policy, & Current Events.",https://www.nationalreview.com/,general
+nbc-news,NBC News,us,"Breaking news, videos, and the latest top stories in world news, business, politics, health and pop culture.",http://www.nbcnews.com,general
+new-scientist,New Scientist,us,"Breaking science and technology news from around the world. Exclusive stories and expert analysis on space, technology, health, physics, life and Earth.",https://www.newscientist.com/section/news,science
+newsweek,Newsweek,us,"Newsweek provides in-depth analysis, news and opinion about international issues, technology, business, culture and politics.",https://www.newsweek.com,general
+new-york-magazine,New York Magazine,us,"NYMAG and New York magazine cover the new, the undiscovered, the next in politics, culture, food, fashion, and behavior nationally, through a New York lens.",https://nymag.com/,general
+next-big-future,Next Big Future,us,"Coverage of science and technology that have the potential for disruption, and analysis of plans, policies, and technology that enable radical improvement.",https://www.nextbigfuture.com,science
+nfl-news,NFL News,us,"The official source for NFL news, schedules, stats, scores and more.",http://www.nfl.com/news,sports
+nhl-news,NHL News,us,"The most up-to-date breaking hockey news from the official source including interviews, rumors, statistics and schedules.",https://www.nhl.com/news,sports
+politico,Politico,us,"Political news about Congress, the White House, campaigns, lobbyists and issues.",https://www.politico.com,general
+polygon,Polygon,us,"Polygon is a gaming website in partnership with Vox Media. Our culture focused site covers games, their creators, the fans, trending stories and entertainment news.",http://www.polygon.com,entertainment
+recode,Recode,us,"Get the latest independent tech news, reviews and analysis from Recode with the most informed and respected journalists in technology and media.",http://www.recode.net,technology
+reddit-r-all,Reddit /r/all,us,"Reddit is an entertainment, social news networking service, and news website. Reddit's registered community members can submit content, such as text posts or direct links.",https://www.reddit.com/r/all,general
+reuters,Reuters,us,"Reuters.com brings you the latest news from around the world, covering breaking news in business, politics, entertainment, technology, video and pictures.",https://www.reuters.com,general
+techcrunch,TechCrunch,us,"TechCrunch is a leading technology media property, dedicated to obsessively profiling startups, reviewing new Internet products, and breaking tech news.",https://techcrunch.com,technology
+techradar,TechRadar,us,"The latest technology news and reviews, covering computing, home entertainment systems, gadgets and more.",https://www.techradar.com,technology
+the-american-conservative,The American Conservative,us,Realism and reform. A new voice for a new generation of conservatives.,http://www.theamericanconservative.com/,general
+the-hill,The Hill,us,"The Hill is a top US political website, read by the White House and more lawmakers than any other site -- vital for policy, politics and election campaigns.",https://thehill.com,general
+the-huffington-post,The Huffington Post,us,"The Huffington Post is a politically liberal American online news aggregator and blog that has both localized and international editions founded by Arianna Huffington, Kenneth Lerer, Andrew Breitbart, and Jonah Peretti, featuring columnists.",http://www.huffingtonpost.com,general
+the-next-web,The Next Web,us,"The Next Web is one of the world’s largest online publications that delivers an international perspective on the latest news about Internet technology, business and culture.",http://thenextweb.com,technology
+the-verge,The Verge,us,"The Verge covers the intersection of technology, science, art, and culture.",http://www.theverge.com,technology
+the-wall-street-journal,The Wall Street Journal,us,"WSJ online coverage of breaking news and current headlines from the US and around the world. Top stories, photos, videos, detailed analysis and in-depth reporting.",http://www.wsj.com,business
+the-washington-post,The Washington Post,us,"Breaking news and analysis on politics, business, world national news, entertainment more. In-depth DC, Virginia, Maryland news coverage including traffic, weather, crime, education, restaurant reviews and more.",https://www.washingtonpost.com,general
+the-washington-times,The Washington Times,us,The Washington Times delivers breaking news and commentary on the issues that affect the future of our nation.,https://www.washingtontimes.com/,general
+time,Time,us,"Breaking news and analysis from TIME.com. Politics, world news, photos, video, tech reviews, health, science and entertainment news.",http://time.com,general
+usa-today,USA Today,us,"Get the latest national, international, and political news at USATODAY.com.",http://www.usatoday.com/news,general
+vice-news,Vice News,us,"Vice News is Vice Media, Inc.'s current affairs channel, producing daily documentary essays and video through its website and YouTube channel. It promotes itself on its coverage of ""under - reported stories"".",https://news.vice.com,general
+wired,Wired,us,"Wired is a monthly American magazine, published in print and online editions, that focuses on how emerging technologies affect culture, the economy, and politics.",https://www.wired.com,technology
+cbc-news,CBC News,ca,"CBC News is the division of the Canadian Broadcasting Corporation responsible for the news gathering and production of news programs on the corporation's English-language operations, namely CBC Television, CBC Radio, CBC News Network, and CBC.ca.",http://www.cbc.ca/news,general
+financial-post,Financial Post,ca,Find the latest happenings in the Canadian Financial Sector and stay up to date with changing trends in Business Markets. Read trading and investing advice from professionals.,https://financialpost.com,business
+google-news-ca,Google News (Canada),ca,"Comprehensive, up-to-date Canada news coverage, aggregated from sources all over the world by Google News.",https://news.google.com,general
+the-globe-and-mail,The Globe And Mail,ca,"The Globe and Mail offers the most authoritative news in Canada, featuring national and international news.",https://www.theglobeandmail.com,general
