@@ -1,50 +1,84 @@
-import argparse
-import pandas as pd
 import os
+import pandas as pd
+from pathlib import Path
+import numpy as np
 
-# Function to annotate categories for the articles
+# Define categories
+CATEGORIES = {
+    "1": "Election Dynamics",
+    "2": "Campaign Strategies and Public Engagement",
+    "3": "Policy and Governance",
+    "4": "Cultural Influence and Public Perception",
+    "5": "Endorsements and Opposition",
+    "6": "Technology, Media, and Communication"
+}
+
+# Paths
+BASE_DIR = Path(__file__).resolve().parent.parent  # Root project directory
+INPUT_FILE = BASE_DIR / "data/processed/articles_kamala_harris.csv"
+OUTPUT_DIR = BASE_DIR / "data/annotations"
+
 def annotate_categories(start_row):
-    # Load the CSV file containing the articles data
-    processed_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'processed', 'articles_kamala_harris.csv')
-    df = pd.read_csv(processed_file)
+    # Ensure the annotations directory exists
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Get the rows to annotate (100 rows from the starting point)
-    end_row = start_row + 100
-    annotated_df = df.iloc[start_row - 1:end_row].copy()
+    # Load the CSV file
+    if not INPUT_FILE.exists():
+        print(f"Error: Input file not found at {INPUT_FILE}")
+        return
 
-    # Annotate each article one at a time
-    for idx, row in annotated_df.iterrows():
-        print(f"Annotating row {idx + 1}:")
+    df = pd.read_csv(INPUT_FILE)
+    if "category" not in df.columns:
+        df["category"] = ""  # Add a category column if not present
+
+    # Make a copy of the file in the annotations folder
+    output_file = OUTPUT_DIR / "annotated_categories.csv"
+    df.to_csv(output_file, index=False)
+    print(f"Working on a copy of the file saved at {output_file}")
+
+    # Start annotating
+    for i in range(start_row - 1, len(df)):  
+        row = df.iloc[i]
+        print(f"\nRow {i + 1}:")
         print(f"Title: {row['title']}")
         print(f"Description: {row['description']}")
         print(f"Source: {row['source']}")
-        
-        # Ask for the category annotation
-        category = input("Enter category for this article (or 'skip' to skip): ")
-        
-        if category.lower() != 'skip':
-            annotated_df.at[idx, 'category'] = category
+        print(f"Current Category: {row['category'] if pd.notna(row['category']) else 'No category assigned.'}")
 
-    # Save the annotated data to the 'data/annotations' folder
-    annotated_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'annotations', 'annotated_categories.csv')
-    os.makedirs(os.path.dirname(annotated_file), exist_ok=True)
-    annotated_df.to_csv(annotated_file, index=False)
-    print(f"Annotations saved to '{annotated_file}'.")
+        # If a category exists, ask if it should be changed
+        if pd.notna(row["category"]):
+            change = input("This article already has a category. Do you want to change it? (y/n): ").strip().lower()
+            if change != "y":
+                continue
+        else:
+            print("No category assigned yet.")
 
-# Main function to handle command-line arguments
-def main():
-    parser = argparse.ArgumentParser(description="Annotate categories for articles.")
-    parser.add_argument('start_row', type=int, help="The starting row number for annotations.")
-    args = parser.parse_args()
+        # Show options and get user input
+        print("\nSelect a category:")
+        for key, category in CATEGORIES.items():
+            print(f"Press {key} for \"{category}\"")
+        print("Enter 'q' to quit.")
 
-    # Validate the starting row input
-    if args.start_row < 1:
-        print("Starting row must be a positive integer.")
-        return
+        choice = input("Your choice: ").strip()
+        if choice == "q":
+            print("Exiting annotation process.")
+            break
+        elif choice in CATEGORIES:
+            df.at[i, "category"] = CATEGORIES[choice]
+            print(f"Category \"{CATEGORIES[choice]}\" assigned to row {i + 1}.")
+        else:
+            print("Invalid choice. Please try again.")
 
-    # Call the function to annotate the categories
-    annotate_categories(args.start_row)
+    # Save the updated file
+    df.to_csv(output_file, index=False)
+    print(f"\nAnnotation complete. File saved at {output_file}")
 
-# Entry point of the script
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+    # Get starting row
+    try:
+        start_row = int(input("Enter the starting row number: ").strip())
+    except ValueError:
+        print("Invalid input. Please enter a valid row number.")
+        exit(1)
+
+    annotate_categories(start_row)
