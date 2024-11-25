@@ -38,7 +38,7 @@ def annotate_categories(start_row):
     df["coverage"] = df["coverage"].astype("object")
 
     # Make a copy of the file in the annotations folder if it doesn't exist
-    output_file = OUTPUT_DIR / "annotated_categories.csv"
+    output_file = OUTPUT_DIR / "annotated_articles.csv"
     if output_file.exists():
         annotated_df = pd.read_csv(output_file)  # Load existing annotations
         # Merge the existing annotations with the new data
