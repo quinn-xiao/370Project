@@ -1,9 +1,9 @@
 my_project/
 ├── data/
 │   ├── raw/
-│   │   ├── news_sources.json  # Fetched news sources data
-│   │   └── articles.json      # Fetched articles data
+│   │   ├── news_sources.json   # Fetched news sources data
 │   ├── processed/              # Cleaned, transformed data
+│   │   └── articles.csv        # Fetched articles data
 │   └── annotations/            # Annotated data
 ├── src/
 │   ├── fetch_data.py           # Script for fetching articles
