@@ -37,11 +37,17 @@ def annotate_categories(start_row):
     df["category"] = df["category"].astype("object")
     df["coverage"] = df["coverage"].astype("object")
 
-    # Make a copy of the file in the annotations folder
+    # Make a copy of the file in the annotations folder if it doesn't exist
     output_file = OUTPUT_DIR / "annotated_categories.csv"
-    df.to_csv(output_file, index=False)
-    print(f"Working on a copy of the file saved at {output_file}")
-
+    if output_file.exists():
+        annotated_df = pd.read_csv(output_file)  # Load existing annotations
+        # Merge the existing annotations with the new data
+        df["category"] = annotated_df["category"]
+        df["coverage"] = annotated_df["coverage"]
+        print(f"Existing annotations found. Continuing from row {start_row}.")
+    else:
+        print(f"Working on a new annotated file at {output_file}")
+    
     # Start annotating
     for i in range(start_row - 1, len(df)):
         row = df.iloc[i]
@@ -101,5 +107,3 @@ if __name__ == "__main__":
         exit(1)
 
     annotate_categories(start_row)
-
-
